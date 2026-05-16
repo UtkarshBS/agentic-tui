@@ -1,0 +1,7 @@
+Summarize the following conversation and tool execution history into a compact paragraph. Preserve:
+1. The user's original intent
+2. Key findings from tool calls
+3. Any pending or completed edits
+4. Errors or blockers encountered
+
+Discard routine tool outputs that did not yield useful information.

@@ -1,0 +1,119 @@
+/* Agentic TUI Layout */
+
+Screen {
+    layout: vertical;
+}
+
+#main-screen {
+    layout: horizontal;
+    height: 100%;
+}
+
+#left-pane {
+    width: 25%;
+    height: 100%;
+    border: solid green;
+}
+
+#center-pane {
+    width: 50%;
+    height: 100%;
+    border: solid blue;
+}
+
+#right-pane {
+    width: 25%;
+    height: 100%;
+    border: solid magenta;
+}
+
+#file-tree {
+    height: 85%;
+    overflow-y: auto;
+}
+
+#status-bar {
+    height: 3;
+    dock: bottom;
+    background: $surface-darken-1;
+    color: $text;
+    content-align: center middle;
+}
+
+#chat-log {
+    height: 80%;
+    overflow-y: auto;
+    border: solid $primary;
+}
+
+#input-bar {
+    height: 20%;
+    border: solid $secondary;
+}
+
+#tool-panel {
+    height: 60%;
+    overflow-y: auto;
+    border: solid $warning;
+}
+
+#preview-panel {
+    height: 40%;
+    overflow-y: auto;
+    border: solid $success;
+}
+
+.message-user {
+    background: $primary-darken-2;
+    color: $text;
+    margin: 1;
+    padding: 1;
+}
+
+.message-assistant {
+    background: $surface;
+    color: $text;
+    margin: 1;
+    padding: 1;
+}
+
+.message-tool {
+    background: $warning-darken-2;
+    color: $text;
+    margin: 1;
+    padding: 1;
+}
+
+.diff-old {
+    background: $error-darken-2;
+    color: $text;
+}
+
+.diff-new {
+    background: $success-darken-2;
+    color: $text;
+}
+
+ModalScreen {
+    align: center middle;
+}
+
+#diff-modal {
+    width: 90%;
+    height: 90%;
+    border: solid $primary;
+    background: $surface;
+}
+
+#config-screen {
+    layout: vertical;
+    padding: 2;
+}
+
+#indexer-screen {
+    align: center middle;
+}
+
+#indexer-progress {
+    width: 60;
+}

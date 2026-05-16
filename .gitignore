@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+data/vector_store/*.sqlite
+data/cache/
+*.egg-info/
+dist/
+build/
+repomix*

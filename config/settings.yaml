@@ -1,0 +1,27 @@
+rag:
+  chunk_size: 1500
+  chunk_overlap: 150
+  top_k: 8
+  embedding_model: nomic-embed-text-v1.5
+  vector_store_path: data/vector_store/embeddings.sqlite
+
+tui:
+  theme: monokai
+  max_chat_history: 100
+  auto_confirm_simple: false
+
+agent:
+  max_iterations: 15
+  temperature: 0.2
+  enable_self_correction: true
+  max_context_tokens: 120000
+
+indexer:
+  watch_interval_seconds: 5
+  exclude_patterns:
+    - "*.pyc"
+    - "__pycache__"
+    - ".git"
+    - "node_modules"
+    - "venv"
+    - ".env"
