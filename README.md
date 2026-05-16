@@ -49,6 +49,7 @@ or use the launcher
 
 ## Architecture
 
+```plaintext
 agentic_tui/
 ├── config/          # Prompts, provider YAML, settings
 ├── src/
@@ -59,6 +60,7 @@ agentic_tui/
 │   ├── tools/       # File, edit, shell, RAG tools exposed to LLM
 │   └── core/        # Project, events, tokenizer, logger
 └── data/            # SQLite vector store + LLM response cache
+```
 
 ## RAG Flow
 - Chunker splits code by AST nodes (functions/classes) with overlap
